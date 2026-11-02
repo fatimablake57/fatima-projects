@@ -1,0 +1,4 @@
+payment_id,policy_id,amount,paid_at
+PAY-001,POL-001,600.00,2025-01-05
+PAY-002,POL-001,400.00,2025-01-20
+PAY-003,POL-002,240.00,2025-01-23

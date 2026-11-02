@@ -1,0 +1,26 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "synthetic-obs-001",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://example.invalid/synthetic-codes",
+              "code": "DEMO-TEMP",
+              "display": "Synthetic temperature"
+            }
+          ],
+          "text": "Synthetic temperature"
+        },
+        "subject": {"reference": "Patient/SYNTH-PAT-002"},
+        "effectiveDateTime": "2025-01-16T10:30:00Z",
+        "valueQuantity": {"value": 36.8, "unit": "Cel"}
+      }
+    }
+  ]
+}

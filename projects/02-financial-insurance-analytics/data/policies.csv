@@ -1,0 +1,4 @@
+policy_id,expected_premium,expected_commission
+POL-001,1000.00,100.00
+POL-002,250.00,25.00
+POL-003,500.00,50.00

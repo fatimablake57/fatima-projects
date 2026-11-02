@@ -1,0 +1,16 @@
+[project]
+name = "data-engineering-portfolio"
+version = "1.0.0"
+description = "Synthetic-data portfolio demonstrations for data engineering"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["projects"]

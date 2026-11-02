@@ -1,0 +1,7 @@
+event_id,event_time,event_type,amount
+EVT-001,2025-02-01T10:15:00Z,payment,125.50
+EVT-002,2025-02-01T11:20:00Z,claim,75.00
+EVT-003,2025-02-02T09:05:00Z,payment,42.25
+EVT-004,2025-02-02T13:40:00Z,adjustment,15.00
+EVT-005,invalid-date,claim,22.00
+EVT-006,2025-02-02T14:00:00Z,unknown,12.00
