@@ -14,7 +14,7 @@ The demo writes `customer_orders.csv` and `rejected_orders.csv` beneath this pro
 
 ## Sample result
 
-[View the live synthetic output preview](https://atifwright57.github.io/fatima-projects/demos/#project-01).
+[View the live synthetic output preview](https://fatimablake57.github.io/fatima-projects/demos/#project-01).
 
 ![Screenshot of enterprise integration sample output](../../docs/project-01-preview.png)
 
