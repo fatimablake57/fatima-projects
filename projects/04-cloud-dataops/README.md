@@ -16,6 +16,12 @@ The default lakehouse is written beneath `projects/04-cloud-dataops/output/lakeh
 - `gold/daily_summary.csv` — event count and amount by event date
 - `manifest.json` — source hash, record counts, and run status
 
+## Sample result
+
+[View the live synthetic output preview](https://atifwright57.github.io/fatima-projects/demos/#project-04).
+
+![Screenshot of the medallion pipeline sample output](../../docs/project-04-preview.png)
+
 ## Data flow
 
 ```mermaid
@@ -31,7 +37,9 @@ flowchart LR
     G --> M
 ```
 
-## Class diagram
+## Conceptual class diagram
+
+The runnable code uses module-level functions; this UML-style view describes the logical responsibilities, not classes implemented in the demo.
 
 ```mermaid
 classDiagram

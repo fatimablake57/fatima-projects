@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sample outputs from four runnable data engineering demos, using synthetic data.">
+    <title>Pipeline output previews | Data Engineering Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      .demo-page { width: min(940px, calc(100% - 40px)); margin: 0 auto; padding: 48px 0; }
+      .demo-intro { margin-bottom: 30px; }
+      .demo-intro a, .demo-card a { color: #2563eb; text-decoration: none; }
+      .demo-card { margin: 20px 0; padding: 26px; border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; box-shadow: 0 5px 20px #13294b08; }
+      .demo-head { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
+      .demo-head h2 { margin: 0 0 8px; font-size: 23px; }
+      .demo-head p { margin: 0 0 18px; color: #64748b; font-size: 13px; line-height: 1.6; }
+      .badge { flex: 0 0 auto; padding: 6px 9px; border-radius: 16px; background: #eff6ff; color: #2563eb; font-size: 10px; font-weight: 800; }
+      .table-wrap { overflow-x: auto; }
+      table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: left; }
+      th { padding: 10px 9px; background: #f1f5f9; color: #475569; font-size: 10px; letter-spacing: .04em; text-transform: uppercase; }
+      td { padding: 10px 9px; border-bottom: 1px solid #e2e8f0; color: #334155; white-space: nowrap; }
+      .ok { color: #15803d; font-weight: 700; }
+      .warn { color: #b45309; font-weight: 700; }
+      .metric-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 18px; }
+      .metric { padding: 9px 12px; border-radius: 6px; background: #f1f5f9; color: #475569; font-size: 11px; }
+      .metric strong { color: #17243b; }
+      .notice { margin-top: 24px; }
+      @media (max-width: 600px) {
+        .demo-page { width: calc(100% - 24px); padding-top: 30px; }
+        .demo-card { padding: 18px 14px; }
+        .demo-head { display: block; }
+        .badge { display: inline-block; margin-bottom: 12px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="demo-page">
+      <header class="demo-intro">
+        <p class="eyebrow">SYNTHETIC DATA · REPRODUCIBLE EXAMPLES</p>
+        <h1 style="font-size:clamp(30px,5vw,46px);color:#17243b">Pipeline output previews</h1>
+        <p class="intro" style="color:#64748b">These read-only tables correspond to the checked-in sample inputs. Run each project's Python command to regenerate the output files locally.</p>
+        <a href="../index.html">← Back to portfolio</a>
+      </header>
+
+      <article class="demo-card" id="project-01">
+        <div class="demo-head">
+          <div><h2>01 · Enterprise Data Integration</h2><p>Three joined orders accepted; two records quarantined with explicit reasons.</p></div>
+          <span class="badge">3 accepted · 2 rejected</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Order</th><th>Customer</th><th>Segment</th><th>Date</th><th>Amount</th><th>Result</th></tr></thead>
+            <tbody>
+              <tr><td>ORD-1001</td><td>Avery Example</td><td>retail</td><td>2025-01-05</td><td>125.50</td><td class="ok">accepted</td></tr>
+              <tr><td>ORD-1002</td><td>Jordan Sample</td><td>business</td><td>2025-01-06</td><td>980.00</td><td class="ok">accepted</td></tr>
+              <tr><td>ORD-1003</td><td>Avery Example</td><td>retail</td><td>2025-01-09</td><td>45.25</td><td class="ok">accepted</td></tr>
+              <tr><td>ORD-1004</td><td>—</td><td>—</td><td>2025-01-10</td><td>20.00</td><td class="warn">unknown customer</td></tr>
+              <tr><td>ORD-1005</td><td>—</td><td>—</td><td>not-a-date</td><td>12.00</td><td class="warn">invalid date</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="demo-card" id="project-02">
+        <div class="demo-head">
+          <div><h2>02 · Financial &amp; Insurance Analytics</h2><p>Expected and actual premiums/commissions compared as exact cents.</p></div>
+          <span class="badge">1 reconciled · 2 exceptions</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Policy</th><th>Premium expected</th><th>Premium actual</th><th>Premium variance</th><th>Commission variance</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>POL-001</td><td>$1,000.00</td><td>$1,000.00</td><td>$0.00</td><td>$0.00</td><td class="ok">reconciled</td></tr>
+              <tr><td>POL-002</td><td>$250.00</td><td>$240.00</td><td>-$10.00</td><td>-$5.00</td><td class="warn">exception</td></tr>
+              <tr><td>POL-003</td><td>$500.00</td><td>$0.00</td><td>-$500.00</td><td>-$50.00</td><td class="warn">exception</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="demo-card" id="project-03">
+        <div class="demo-head">
+          <div><h2>03 · Healthcare Interoperability</h2><p>HL7 v2 ORU and FHIR R4 observations normalized to one output shape.</p></div>
+          <span class="badge">3 synthetic observations</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Source</th><th>Patient ref</th><th>Code</th><th>Observation</th><th>Value</th><th>Unit</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>HL7v2</td><td>SYNTH-PAT-001</td><td>DEMO-GLU</td><td>Synthetic glucose</td><td>92</td><td>mg/dL</td><td>F</td></tr>
+              <tr><td>HL7v2</td><td>SYNTH-PAT-001</td><td>DEMO-HGB</td><td>Synthetic hemoglobin</td><td>13.8</td><td>g/dL</td><td>F</td></tr>
+              <tr><td>FHIR</td><td>SYNTH-PAT-002</td><td>DEMO-TEMP</td><td>Synthetic temperature</td><td>36.8</td><td>Cel</td><td>final</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="demo-card" id="project-04">
+        <div class="demo-head">
+          <div><h2>04 · Cloud Modernization &amp; DataOps</h2><p>Validated silver records roll up into a SQL-based daily gold summary.</p></div>
+          <span class="badge">4 silver · 2 quarantined</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric">Bronze rows <strong>6</strong></span>
+          <span class="metric">Silver rows <strong>4</strong></span>
+          <span class="metric">Quarantined <strong>2</strong></span>
+          <span class="metric">Run status <strong class="ok">success</strong></span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Event date</th><th>Event type</th><th>Count</th><th>Total amount</th></tr></thead>
+            <tbody>
+              <tr><td>2025-02-01</td><td>claim</td><td>1</td><td>$75.00</td></tr>
+              <tr><td>2025-02-01</td><td>payment</td><td>1</td><td>$125.50</td></tr>
+              <tr><td>2025-02-02</td><td>adjustment</td><td>1</td><td>$15.00</td></tr>
+              <tr><td>2025-02-02</td><td>payment</td><td>1</td><td>$42.25</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <section class="notice">
+        <span class="notice-icon" aria-hidden="true">i</span>
+        <p><strong>Synthetic examples only.</strong> Names and identifiers are fictitious. These previews are illustrative outputs from the included sample data, not production healthcare, financial, or employer data.</p>
+      </section>
+    </main>
+  </body>
+</html>

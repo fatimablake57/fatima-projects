@@ -30,7 +30,7 @@ Generated files go to each project's ignored `output/` directory, except the Dat
 
 ## Architecture
 
-The [live portfolio landing page](https://atifwright57.github.io/fatima-projects/) is published from `docs/` with GitHub Pages. The [portfolio architecture and data-flow diagrams](docs/portfolio-architecture.md) describe the shared design boundaries. Each project README has setup instructions, a Mermaid architecture/data-flow graph, a focused class diagram, test commands, and its own synthetic-data disclaimer.
+The [live portfolio landing page](https://atifwright57.github.io/fatima-projects/) is published from `docs/` with GitHub Pages. The [portfolio architecture and data-flow diagrams](docs/portfolio-architecture.md) describe the shared design boundaries. Each project README has setup instructions, a Mermaid architecture/data-flow graph, a conceptual class diagram, a sample-output screenshot, a hosted synthetic preview, test commands, and a data disclaimer.
 
 ![Portfolio landing-page screenshot](docs/portfolio-home.png)
 

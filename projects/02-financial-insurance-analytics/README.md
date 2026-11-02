@@ -10,6 +10,12 @@ python projects/02-financial-insurance-analytics/src/reconcile.py
 
 Outputs are `reconciliation.db` and `reconciliation.csv` in this project's ignored `output/` directory. The schema and aggregate query are readable in `sql/schema.sql` and `sql/reconciliation.sql`.
 
+## Sample result
+
+[View the live synthetic output preview](https://atifwright57.github.io/fatima-projects/demos/#project-02).
+
+![Screenshot of financial reconciliation sample output](../../docs/project-02-preview.png)
+
 ## Data flow
 
 ```mermaid
@@ -22,7 +28,9 @@ flowchart LR
     R --> O[reconciliation.csv]
 ```
 
-## Class diagram
+## Conceptual class diagram
+
+The runnable code uses module-level functions; this UML-style view describes the logical responsibilities, not classes implemented in the demo.
 
 ```mermaid
 classDiagram

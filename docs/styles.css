@@ -56,7 +56,8 @@ h3 { margin: 20px 0 9px; font-size: 20px; letter-spacing: -.025em; }
 .card p { min-height: 48px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 .chips { display: flex; flex-wrap: wrap; gap: 7px; margin: 15px 0; }
 .chips span { padding: 5px 8px; border-radius: 4px; background: #f1f5f9; color: #475569; font-size: 10px; }
-.card > a { color: var(--blue); font-size: 12px; font-weight: 700; text-decoration: none; }
+.card-links { display: flex; flex-wrap: wrap; gap: 18px; }
+.card-links a { color: var(--blue); font-size: 12px; font-weight: 700; text-decoration: none; }
 .notice { display: flex; gap: 13px; align-items: start; margin: 0 0 55px; padding: 18px 20px; border: 1px solid #dbeafe; border-radius: 8px; background: #eff6ff; }
 .notice-icon { display: grid; flex: 0 0 20px; height: 20px; place-items: center; border-radius: 50%; background: #dbeafe; color: #1d4ed8; font-size: 12px; font-weight: 800; }
 .notice p { margin: 0; color: #475569; font-size: 12px; line-height: 1.7; }

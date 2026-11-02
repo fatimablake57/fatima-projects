@@ -12,6 +12,12 @@ python projects/01-enterprise-data-integration/src/etl.py
 
 The demo writes `customer_orders.csv` and `rejected_orders.csv` beneath this project's ignored `output/` directory. Rejected rows are reported rather than silently discarded.
 
+## Sample result
+
+[View the live synthetic output preview](https://atifwright57.github.io/fatima-projects/demos/#project-01).
+
+![Screenshot of enterprise integration sample output](../../docs/project-01-preview.png)
+
 ## Data flow
 
 ```mermaid
@@ -23,7 +29,9 @@ flowchart LR
     V --> Q[rejected_orders.csv with reason]
 ```
 
-## Class diagram
+## Conceptual class diagram
+
+The runnable code uses module-level functions; this UML-style view describes the logical responsibilities, not classes implemented in the demo.
 
 ```mermaid
 classDiagram

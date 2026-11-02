@@ -48,7 +48,9 @@ flowchart LR
     V --> M
 ```
 
-## Class diagrams
+## Conceptual class diagrams
+
+The runnable reference code is intentionally function-oriented. These diagrams show logical component responsibilities as UML-style classes; they are design views, not claims that identically named Python classes are present in each implementation.
 
 ### Enterprise integration
 
@@ -95,7 +97,7 @@ classDiagram
     class InteroperabilityPipeline {
         +run(hl7_path, fhir_path, output_path)
     }
-    class Hl7OrUParser {
+    class Hl7OruParser {
         +parse(text)
     }
     class FhirBundleParser {
@@ -104,7 +106,7 @@ classDiagram
     class ObservationWriter {
         +write(path, observations)
     }
-    InteroperabilityPipeline --> Hl7OrUParser
+    InteroperabilityPipeline --> Hl7OruParser
     InteroperabilityPipeline --> FhirBundleParser
     InteroperabilityPipeline --> ObservationWriter
 ```

@@ -10,6 +10,12 @@ python projects/03-healthcare-interoperability/src/interop.py
 
 The output is `normalized_observations.csv` in this project's ignored `output/` directory. Both checked-in inputs are synthetic and contain no real patient information.
 
+## Sample result
+
+[View the live synthetic output preview](https://atifwright57.github.io/fatima-projects/demos/#project-03).
+
+![Screenshot of healthcare interoperability sample output](../../docs/project-03-preview.png)
+
 ## Data flow
 
 ```mermaid
@@ -21,7 +27,9 @@ flowchart LR
     N --> O[normalized_observations.csv]
 ```
 
-## Class diagram
+## Conceptual class diagram
+
+The runnable code uses module-level functions; this UML-style view describes the logical responsibilities, not classes implemented in the demo.
 
 ```mermaid
 classDiagram
