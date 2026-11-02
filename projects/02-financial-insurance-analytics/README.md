@@ -12,7 +12,7 @@ Outputs are `reconciliation.db` and `reconciliation.csv` in this project's ignor
 
 ## Sample result
 
-[View the live synthetic output preview](https://fatimablake57.github.io/fatima-projects/demos/#project-02).
+[View the live synthetic output preview](https://fatima-data-engineering-portfolio.vercel.app/demos/#project-02).
 
 ![Screenshot of financial reconciliation sample output](../../docs/project-02-preview.png)
 

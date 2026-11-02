@@ -18,7 +18,7 @@ The default lakehouse is written beneath `projects/04-cloud-dataops/output/lakeh
 
 ## Sample result
 
-[View the live synthetic output preview](https://fatimablake57.github.io/fatima-projects/demos/#project-04).
+[View the live synthetic output preview](https://fatima-data-engineering-portfolio.vercel.app/demos/#project-04).
 
 ![Screenshot of the medallion pipeline sample output](../../docs/project-04-preview.png)
 

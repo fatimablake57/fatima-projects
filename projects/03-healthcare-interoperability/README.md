@@ -12,7 +12,7 @@ The output is `normalized_observations.csv` in this project's ignored `output/` 
 
 ## Sample result
 
-[View the live synthetic output preview](https://fatimablake57.github.io/fatima-projects/demos/#project-03).
+[View the live synthetic output preview](https://fatima-data-engineering-portfolio.vercel.app/demos/#project-03).
 
 ![Screenshot of healthcare interoperability sample output](../../docs/project-03-preview.png)
 

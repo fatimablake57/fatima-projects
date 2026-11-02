@@ -3,85 +3,185 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Four runnable, synthetic-data demonstrations of modern data engineering patterns.">
-    <meta name="theme-color" content="#101b2d">
-    <title>Data Engineering Portfolio</title>
+    <meta name="theme-color" content="#f7f8f6">
+    <meta name="description" content="Fatima Blake is a senior data engineer building dependable data platforms, analytics pipelines, and cloud solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fatima Blake — Senior Data Engineer">
+    <meta property="og:description" content="Data platforms, thoughtful architecture, and dependable analytics engineering.">
+    <meta property="og:url" content="https://fatima-data-engineering-portfolio.vercel.app/">
+    <link rel="canonical" href="https://fatima-data-engineering-portfolio.vercel.app/">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
+    <title>Fatima Blake — Senior Data Engineer</title>
   </head>
   <body>
-    <header class="hero">
-      <nav aria-label="Main navigation">
-        <a class="brand" href="#home">DE<span>.</span></a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="https://github.com/fatimablake57/fatima-projects">GitHub repository ↗</a>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="Fatima Blake home">FB<span>.</span></a>
+        <details class="mobile-menu">
+          <summary aria-label="Toggle navigation menu"><span></span><span></span></summary>
+          <div class="mobile-menu-panel">
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </details>
+        <div class="desktop-nav">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#projects">Selected work</a>
+          <a href="#experience">Experience</a>
+        </div>
+        <a class="nav-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
       </nav>
-      <div class="hero-content" id="home">
-        <p class="eyebrow">DATA ENGINEERING · PYTHON · SQL</p>
-        <h1>Reliable data, thoughtfully engineered.</h1>
-        <p class="intro">Four small, end-to-end demonstrations of integration, financial reconciliation, healthcare interoperability, and DataOps.</p>
-        <a class="button" href="#projects">Explore the projects <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hero-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
     </header>
 
     <main>
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">SELECTED WORK</p>
-            <h2>Project portfolio</h2>
+      <section class="hero page-shell" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="availability-dot"></span> DATA ENGINEERING · CLOUD · ANALYTICS</p>
+          <h1>Building data foundations <span>people can rely on.</span></h1>
+          <p class="hero-description">I'm Fatima Blake, a senior data engineer with 10+ years of experience turning complex data challenges into reliable platforms, useful analytics, and thoughtful cloud solutions.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
           </div>
-          <p>Each project includes runnable code, synthetic sample data, tests, setup instructions, and architecture diagrams.</p>
+          <div class="hero-footnote"><span>Sacramento, California</span><span class="footnote-line"></span><span>10+ YEARS IN DATA ENGINEERING</span></div>
         </div>
-        <div class="project-grid">
-          <article class="card">
-            <div class="card-top"><span class="number">01</span><span class="tag">ETL · QUALITY</span></div>
-            <h3>Enterprise Data Integration</h3>
-            <p>Validate and join customer and order feeds, preserve data quality, and quarantine rejected rows with clear reasons.</p>
-            <div class="chips"><span>Python</span><span>CSV</span><span>Data quality</span></div>
-            <div class="card-links">
-              <a href="https://github.com/fatimablake57/fatima-projects/tree/main/projects/01-enterprise-data-integration">Source &amp; README ↗</a>
-              <a href="demos/index.html#project-01">Sample output ↗</a>
+
+        <div class="architecture-card" role="img" aria-label="Illustration of connected data sources flowing through a dependable data platform to analytics and products">
+          <div class="architecture-top"><span>DATA SYSTEMS</span><span class="architecture-status"><i></i> IN FLOW</span></div>
+          <div class="architecture-graph">
+            <div class="source-stack">
+              <span class="graph-node"><span class="node-icon icon-database">◉</span> SOURCES</span>
+              <span class="graph-node"><span class="node-icon icon-stream">⌁</span> STREAMS</span>
+              <span class="graph-node"><span class="node-icon icon-api">↔</span> APIS</span>
             </div>
-          </article>
-          <article class="card">
-            <div class="card-top"><span class="number">02</span><span class="tag">ANALYTICS · SQL</span></div>
-            <h3>Financial &amp; Insurance Analytics</h3>
-            <p>Reconcile policy premiums and commissions using exact-cent arithmetic, SQL aggregation, and auditable variance reports.</p>
-            <div class="chips"><span>Python</span><span>SQLite</span><span>SQL</span></div>
-            <div class="card-links">
-              <a href="https://github.com/fatimablake57/fatima-projects/tree/main/projects/02-financial-insurance-analytics">Source &amp; README ↗</a>
-              <a href="demos/index.html#project-02">Sample output ↗</a>
+            <div class="flow-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="platform-node">
+              <div class="platform-symbol"><span></span><span></span><span></span><span></span></div>
+              <strong>Data platform</strong>
+              <small>Built for trust &amp; scale</small>
             </div>
-          </article>
-          <article class="card">
-            <div class="card-top"><span class="number">03</span><span class="tag">INTEROPERABILITY</span></div>
-            <h3>Healthcare Data Interoperability</h3>
-            <p>Normalize a focused set of HL7 v2 and FHIR R4 observations into a consistent, validated output.</p>
-            <div class="chips"><span>Python</span><span>HL7 v2</span><span>FHIR R4</span></div>
-            <div class="card-links">
-              <a href="https://github.com/fatimablake57/fatima-projects/tree/main/projects/03-healthcare-interoperability">Source &amp; README ↗</a>
-              <a href="demos/index.html#project-03">Sample output ↗</a>
+            <div class="output-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="output-stack">
+              <span class="graph-node"><span class="output-icon">▤</span> ANALYTICS</span>
+              <span class="graph-node"><span class="output-icon">◷</span> INSIGHTS</span>
+              <span class="graph-node"><span class="output-icon">◎</span> PRODUCTS</span>
             </div>
-          </article>
-          <article class="card">
-            <div class="card-top"><span class="number">04</span><span class="tag">DATAOPS · LAKEHOUSE</span></div>
-            <h3>Cloud Modernization &amp; DataOps</h3>
-            <p>Build bronze, silver, and gold layers with validation, quarantine, SQL summaries, and a verifiable run manifest.</p>
-            <div class="chips"><span>Python</span><span>SQLite SQL</span><span>Medallion</span></div>
-            <div class="card-links">
-              <a href="https://github.com/fatimablake57/fatima-projects/tree/main/projects/04-cloud-dataops">Source &amp; README ↗</a>
-              <a href="demos/index.html#project-04">Sample output ↗</a>
+          </div>
+          <div class="architecture-bottom"><span>INGEST</span><span>TRANSFORM</span><span>DELIVER</span></div>
+        </div>
+
+        <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="intro-section section-shell" id="about">
+        <div class="section-label"><span>01</span><span>ABOUT</span></div>
+        <div class="intro-copy">
+          <h2>Make data useful.<br><span>Make systems dependable.</span></h2>
+          <p>I design and build the systems that move data from operational sources to trusted decisions. My work spans batch and streaming pipelines, cloud data platforms, lakehouse architecture, and the engineering practices that keep them healthy.</p>
+          <p>Across financial services, healthcare, and enterprise data, I partner with technical and business teams to deliver practical, well-documented solutions—with data quality, governance, and reliability built in.</p>
+          <a class="underlined-link" href="#experience">A little more about my experience <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="intro-stat"><strong>10<span>+</span></strong><span>years building<br>data solutions</span></div>
+      </section>
+
+      <section class="expertise-section" id="expertise">
+        <div class="section-shell expertise-inner">
+          <div class="section-label"><span>02</span><span>WHAT I BRING</span></div>
+          <div class="expertise-content">
+            <div class="section-heading">
+              <p class="eyebrow">FROM FIRST INGEST TO TRUSTED INSIGHT</p>
+              <h2>Thoughtful engineering.<br><span>End-to-end ownership.</span></h2>
             </div>
-          </article>
+            <div class="expertise-grid">
+              <article class="expertise-card"><span class="expertise-number">01</span><h3>Data platforms</h3><p>Cloud warehouses and lakehouse architectures that make complex data easier to trust, discover, and use.</p><span class="expertise-arrow" aria-hidden="true">↗</span></article>
+              <article class="expertise-card"><span class="expertise-number">02</span><h3>Pipeline engineering</h3><p>Scalable ETL/ELT for batch and real-time workloads, with validation and clear paths for bad records.</p><span class="expertise-arrow" aria-hidden="true">↗</span></article>
+              <article class="expertise-card"><span class="expertise-number">03</span><h3>Quality &amp; governance</h3><p>Reliable data through thoughtful reconciliation, observability, lineage, access controls, and documentation.</p><span class="expertise-arrow" aria-hidden="true">↗</span></article>
+              <article class="expertise-card"><span class="expertise-number">04</span><h3>Cloud &amp; DataOps</h3><p>Practical orchestration, CI/CD, and deployment patterns that help data teams ship and operate with confidence.</p><span class="expertise-arrow" aria-hidden="true">↗</span></article>
+            </div>
+            <div class="technology-row"><span>TOOLS IN MY TOOLKIT</span><div class="technology-list"><span>Python</span><span>SQL</span><span>Apache Spark</span><span>PySpark</span><span>AWS</span><span>Kafka</span><span>Airflow</span><span>Snowflake</span><span>Databricks</span></div></div>
+          </div>
         </div>
       </section>
 
-      <section class="notice">
-        <span class="notice-icon" aria-hidden="true">i</span>
-        <p><strong>Responsible demos.</strong> All records are synthetic. These independently authored examples illustrate common patterns; they are not production systems or representations of former employers' code. No real personal, financial, or patient data is included.</p>
+      <section class="projects-section section-shell" id="projects">
+        <div class="section-label"><span>03</span><span>SELECTED WORK</span></div>
+        <div class="projects-content">
+          <div class="section-heading projects-heading">
+            <div><p class="eyebrow">PRACTICAL DEMONSTRATIONS · ORIGINAL CODE</p><h2>Built to be explored.</h2></div>
+            <a class="underlined-link" href="https://github.com/fatimablake57/fatima-projects">View all on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-list">
+            <article class="project-row">
+              <a class="project-preview preview-integration" href="demos/#project-01" aria-label="Preview enterprise data integration project">
+                <span class="preview-kicker">PIPELINE / 01</span><span class="preview-title">Sources <i>→</i> Trusted data</span>
+                <span class="mini-flow"><i>CSV</i><b></b><i>ETL</i><b></b><i>TABLE</i></span>
+              </a>
+              <div class="project-description"><span class="project-meta">01 <i>·</i> DATA QUALITY &amp; INTEGRATION</span><h3>Enterprise Data Integration</h3><p>Joins customer and order feeds, validates records, and makes data issues visible through a reasoned quarantine.</p><div class="project-tags"><span>PYTHON</span><span>ETL</span><span>DATA QUALITY</span></div></div>
+              <div class="project-actions"><a href="demos/#project-01">See sample <span aria-hidden="true">↗</span></a><a href="https://github.com/fatimablake57/fatima-projects/tree/main/projects/01-enterprise-data-integration">View code <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-row">
+              <a class="project-preview preview-finance" href="demos/#project-02" aria-label="Preview financial reconciliation project">
+                <span class="preview-kicker">RECONCILIATION / 02</span><span class="preview-title">Expected <i>−</i> Actual</span>
+                <span class="variance-bars"><i></i><i></i><i></i><i></i><i></i><b>Variance report</b></span>
+              </a>
+              <div class="project-description"><span class="project-meta">02 <i>·</i> FINANCIAL ANALYTICS</span><h3>Financial &amp; Insurance Analytics</h3><p>Reconciles premiums and commissions using exact-cent arithmetic, SQL aggregates, and an auditable variance report.</p><div class="project-tags"><span>PYTHON</span><span>SQLITE</span><span>SQL</span></div></div>
+              <div class="project-actions"><a href="demos/#project-02">See sample <span aria-hidden="true">↗</span></a><a href="https://github.com/fatimablake57/fatima-projects/tree/main/projects/02-financial-insurance-analytics">View code <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-row">
+              <a class="project-preview preview-health" href="demos/#project-03" aria-label="Preview healthcare interoperability project">
+                <span class="preview-kicker">INTEROPERABILITY / 03</span><span class="preview-title">HL7 <i>+</i> FHIR <i>→</i> Observations</span>
+                <span class="health-codes"><span>OBX</span><span>FHIR</span><span>OBS</span></span>
+              </a>
+              <div class="project-description"><span class="project-meta">03 <i>·</i> HEALTHCARE DATA</span><h3>Healthcare Interoperability</h3><p>Normalizes a focused set of HL7 v2 and FHIR observations into a consistent, validated output.</p><div class="project-tags"><span>HL7 V2</span><span>FHIR R4</span><span>PYTHON</span></div></div>
+              <div class="project-actions"><a href="demos/#project-03">See sample <span aria-hidden="true">↗</span></a><a href="https://github.com/fatimablake57/fatima-projects/tree/main/projects/03-healthcare-interoperability">View code <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-row">
+              <a class="project-preview preview-lakehouse" href="demos/#project-04" aria-label="Preview DataOps medallion pipeline">
+                <span class="preview-kicker">MEDALLION / 04</span><span class="layer-stack"><i>BRONZE</i><i>SILVER</i><i>GOLD</i></span><span class="preview-title">Raw <i>→</i> Refined <i>→</i> Ready</span>
+              </a>
+              <div class="project-description"><span class="project-meta">04 <i>·</i> DATAOPS &amp; LAKEHOUSE</span><h3>Cloud Modernization &amp; DataOps</h3><p>Demonstrates medallion layers, validation, rejected-record quarantine, daily SQL summaries, and a verifiable manifest.</p><div class="project-tags"><span>PYTHON</span><span>SQL</span><span>DATAOPS</span></div></div>
+              <div class="project-actions"><a href="demos/#project-04">See sample <span aria-hidden="true">↗</span></a><a href="https://github.com/fatimablake57/fatima-projects/tree/main/projects/04-cloud-dataops">View code <span aria-hidden="true">↗</span></a></div>
+            </article>
+          </div>
+          <p class="project-disclaimer">These independently authored demos use synthetic data and illustrate common engineering patterns. They are not production systems or representations of former employers' code.</p>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience">
+        <div class="section-shell experience-inner">
+          <div class="section-label"><span>04</span><span>EXPERIENCE</span></div>
+          <div class="experience-content">
+            <div class="section-heading"><p class="eyebrow">A CAREER BUILT AROUND DATA</p><h2>Experience with<br><span>the whole data lifecycle.</span></h2></div>
+            <div class="experience-list">
+              <article class="experience-item"><span class="experience-date">2022 — PRESENT</span><div><h3>Senior Data Engineer</h3><p class="company">Four Points Technology</p><p>Architecting cloud data platforms, modern Spark and streaming pipelines, lakehouse patterns, and dependable data operations.</p></div><span class="experience-marker"></span></article>
+              <article class="experience-item"><span class="experience-date">2019 — 2021</span><div><h3>Big Data Engineer</h3><p class="company">Kno2</p><p>Building enterprise integration, analytics, and event-driven data workflows across complex source systems.</p></div><span class="experience-marker"></span></article>
+              <article class="experience-item"><span class="experience-date">2017 — 2019</span><div><h3>Data Engineer</h3><p class="company">AgencyBloc</p><p>Developing cloud data pipelines, warehouse components, and reliable transformation workflows.</p></div><span class="experience-marker"></span></article>
+              <article class="experience-item"><span class="experience-date">2015 — 2016</span><div><h3>Associate Data Engineer</h3><p class="company">PaySimple</p><p>Growing a foundation in data integration, quality, reporting, and distributed data processing.</p></div><span class="experience-marker"></span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-shell">
+          <p class="eyebrow">HAVE A DATA CHALLENGE?</p>
+          <h2>Let's build something<br><span>dependable.</span></h2>
+          <p class="contact-copy">If you are building a data platform, modernizing pipelines, or want to make analytics more trustworthy, I would love to hear what you are working on.</p>
+          <a class="button button-light" href="mailto:fatima.blake57@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+          <div class="contact-links"><a href="mailto:fatima.blake57@gmail.com">fatima.blake57@gmail.com</a><a href="https://github.com/fatimablake57">GitHub profile ↗</a></div>
+          <div class="contact-orbit orbit-one"></div><div class="contact-orbit orbit-two"></div>
+        </div>
       </section>
     </main>
-    <footer><span>Data Engineering Portfolio</span><a href="https://github.com/fatimablake57/fatima-projects">Source code on GitHub ↗</a></footer>
+
+    <footer class="site-footer"><a class="wordmark footer-mark" href="#home">FB<span>.</span></a><span>Thoughtful data engineering, built with care.</span><span>© <span id="year">2026</span> Fatima Blake</span></footer>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
   </body>
 </html>

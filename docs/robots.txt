@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fatima-data-engineering-portfolio.vercel.app/sitemap.xml

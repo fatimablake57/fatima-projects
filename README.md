@@ -1,6 +1,20 @@
-# Data Engineering Portfolio
+# Fatima Blake — Data Engineering Portfolio
+
+A polished, responsive personal portfolio for senior data engineering work, deployed as a static site from [`docs/`](docs/). Built with semantic HTML and CSS—no JavaScript framework or runtime service required.
 
 Four runnable portfolio demonstrations covering data integration, financial reconciliation, healthcare interoperability, and local lakehouse/DataOps patterns.
+
+## Deploy on Vercel
+
+The root [`vercel.json`](vercel.json) configures Vercel to publish `docs/` as the static output directory. The production site is available at [fatima-data-engineering-portfolio.vercel.app](https://fatima-data-engineering-portfolio.vercel.app/). To deploy:
+
+1. The existing Vercel project is `fatima-data-engineering-portfolio`. Connect `fatimablake57/fatima-projects` from the [Vercel dashboard](https://vercel.com/fatimablake57-5075/fatima-data-engineering-portfolio/settings/git) to enable automatic Git deployments.
+2. Keep the project root set to `.` and the framework preset set to **Other**.
+3. Use `docs` as the output directory; the checked-in `vercel.json` already sets this value and disables Python framework detection.
+4. To redeploy manually from the repository root, run `npx vercel --yes --prod --project fatima-data-engineering-portfolio`.
+5. To deploy automatically on Git pushes, connect this repository in [Vercel's Git settings](https://vercel.com/fatimablake57-5075/fatima-data-engineering-portfolio/settings/git).
+
+No build command or Node.js dependencies are required. The Python data-project demos remain in the repository and are not executed as part of the static website deployment.
 
 > **Scope and data:** These are independently authored demonstrations based on broad project themes from a resume, not source code from previous employers or claims about their production systems. All included records are synthetic. Do not use these examples with real financial, insurance, or patient data.
 
@@ -28,9 +42,9 @@ python -m unittest discover -s projects -p "test_*.py" -v
 
 Generated files go to each project's ignored `output/` directory, except the DataOps demo, which writes to `projects/04-cloud-dataops/output/lakehouse/`.
 
-## Architecture
+## Portfolio architecture
 
-The [live portfolio landing page](https://fatimablake57.github.io/fatima-projects/) is published from `docs/` with GitHub Pages. The [portfolio architecture and data-flow diagrams](docs/portfolio-architecture.md) describe the shared design boundaries. Each project README has setup instructions, a Mermaid architecture/data-flow graph, a conceptual class diagram, a sample-output screenshot, a hosted synthetic preview, test commands, and a data disclaimer.
+The [portfolio landing page](docs/index.html) introduces the engineer, areas of expertise, selected project work, and career history, and provides a direct email contact. The [portfolio architecture and data-flow diagrams](docs/portfolio-architecture.md) describe the four project demonstrations. Each project README has setup instructions, Mermaid diagrams, sample-output screenshots, a hosted synthetic preview, tests, and a data disclaimer.
 
 ![Portfolio landing-page screenshot](docs/portfolio-home.png)
 
@@ -38,7 +52,8 @@ The [live portfolio landing page](https://fatimablake57.github.io/fatima-project
 
 - Run all unit tests locally with `python -m unittest discover -s projects -p "test_*.py" -v`.
 - Run each project with the commands in the table above. The pipelines write sample reports locally; generated outputs are intentionally excluded from Git.
-- GitHub Pages hosts a static portfolio page, not a live backend. Cloud infrastructure is not provisioned automatically.
+- The Vercel deployment publishes the static portfolio only. Project pipelines run locally; Vercel does not provision cloud data infrastructure.
+- GitHub Pages remains configured to serve the same static site from `docs/`.
 
 ## Limitations
 
